@@ -14,8 +14,6 @@ os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 parser = argparse.ArgumentParser("""Image classifical!""")
-# parser.add_argument('--path', type=str, default='data/cifar10/',
-#                     help="""image dir path default: 'data/cifar10/'.""")
 
 parser.add_argument('--epochs', type=int, default=100,
                     help="""Epoch default:50.""")
